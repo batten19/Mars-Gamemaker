@@ -7,7 +7,6 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\spr_roverNew</sprite>
-    <sprite>sprites\spr_rover_dust</sprite>
     <sprites name="statusBars">
       <sprite>sprites\spr_barBg</sprite>
       <sprite>sprites\spr_backBar</sprite>
@@ -19,6 +18,9 @@
     </sprites>
     <sprites name="menuBars">
       <sprite>sprites\spr_startButton</sprite>
+    </sprites>
+    <sprites name="Unimplemented Sprites">
+      <sprite>sprites\spr_rover_dust</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -34,8 +36,8 @@
   <objects name="objects">
     <object>objects\obj_rover</object>
     <object>objects\obj_coordinates</object>
+    <object>objects\obj_numberOfSearches</object>
     <object>objects\obj_lootGrid</object>
-    <object>objects\obj_message</object>
     <object>objects\obj_lootResult</object>
     <object>objects\obj_progressBars</object>
     <objects name="menuBars">

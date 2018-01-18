@@ -73,10 +73,14 @@ while(i &lt; numberOfColumns)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>search = keyboard_check_released(ord('E'));
+            <string>///Search event
+
+//Variables
+search = keyboard_check_released(ord('E'));
 nomWidth = (room_width / numberOfColumns);
 nomHeight = (room_width / numberOfRows);
 
+//Find current grid reference, select from created grid and create new object
 if (search &amp;&amp; (global.numberOfSearches &lt; global.numberOfAllowedSearches))
 {
     roverx = floor((obj_rover.x) / nomWidth);
@@ -109,10 +113,13 @@ if (search &amp;&amp; (global.numberOfSearches &lt; global.numberOfAllowedSearch
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Create Grid
+            <string>///Create the Grid overlay
 columnWidth = room_width / numberOfColumns;
 columnHeight = room_height / numberOfRows;
 i=1;
+
+//Set colour of grid
+draw_set_colour(c_black);
 
 while(i &lt; numberOfColumns)
 {
@@ -141,7 +148,10 @@ while(i &lt; numberOfColumns)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/*
+            <string>///OLD METHOD OF SEARCHING
+
+/*
+
 
 ///Search event
 search = obj_rover.searchKey;
