@@ -8,17 +8,17 @@
   <sepmasks>0</sepmasks>
   <bboxmode>0</bboxmode>
   <bbox_left>0</bbox_left>
-  <bbox_right>666</bbox_right>
+  <bbox_right>670</bbox_right>
   <bbox_top>0</bbox_top>
-  <bbox_bottom>139</bbox_bottom>
+  <bbox_bottom>140</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
   <TextureGroups>
     <TextureGroup0>0</TextureGroup0>
   </TextureGroups>
   <For3D>0</For3D>
-  <width>667</width>
-  <height>140</height>
+  <width>671</width>
+  <height>141</height>
   <frames>
     <frame index="0">images\spr_startButton_0.png</frame>
   </frames>

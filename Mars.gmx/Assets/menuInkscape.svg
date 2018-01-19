@@ -17,9 +17,9 @@
    id="svg8"
    inkscape:version="0.92.2 (5c3e80d, 2017-08-06)"
    sodipodi:docname="menuInkscape.svg"
-   inkscape:export-filename="G:\Game Development\The Game\Mars.gmx\Assets\backgrounds\menu\menuMars.png"
-   inkscape:export-xdpi="25.376503"
-   inkscape:export-ydpi="25.376503">
+   inkscape:export-filename="G:\Game Development\Mars Game\Mars.gmx\Assets\backgrounds\menu\menuMars.png"
+   inkscape:export-xdpi="25.386778"
+   inkscape:export-ydpi="25.386778">
   <defs
      id="defs2">
     <linearGradient
@@ -52,8 +52,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.12374369"
-     inkscape:cx="5544.8431"
-     inkscape:cy="2150.0173"
+     inkscape:cx="4126.589"
+     inkscape:cy="2070.0314"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -74,7 +74,21 @@
        position="960.00002,540.00001"
        orientation="1,0"
        id="guide833"
+       inkscape:locked="false"
+       inkscape:label=""
+       inkscape:color="rgb(0,0,255)" />
+    <sodipodi:guide
+       position="0,70.000001"
+       orientation="0,1"
+       id="guide834"
        inkscape:locked="true"
+       inkscape:label=""
+       inkscape:color="rgb(0,0,255)" />
+    <sodipodi:guide
+       position="-468.25621,940.00002"
+       orientation="0,1"
+       id="guide860"
+       inkscape:locked="false"
        inkscape:label=""
        inkscape:color="rgb(0,0,255)" />
   </sodipodi:namedview>
@@ -86,7 +100,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -106,7 +120,7 @@
            height="1058.6399"
            x="678.82251"
            y="186.74144" /></flowRegion><flowPara
-         id="flowPara821"></flowPara></flowRoot>    <rect
+         id="flowPara821" /></flowRoot>    <rect
        style="opacity:0.98000004;fill:url(#linearGradient859);fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
        id="rect835"
        width="1920"
@@ -119,7 +133,7 @@
        xml:space="preserve"
        id="flowRoot823"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:192px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       transform="matrix(0.26458333,0,0,0.26458333,404.70195,-727.40794)"><flowRegion
+       transform="matrix(0.36689774,0,0,0.47571624,189.96812,-813.09169)"><flowRegion
          id="flowRegion825"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:192px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start"><rect
            id="rect827"
@@ -133,7 +147,7 @@
        xml:space="preserve"
        id="flowRoot845"
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       transform="matrix(0.26458333,0,0,0.26458333,217.71429,-787.53571)"><flowRegion
+       transform="matrix(0.26458333,0,0,0.26458333,219.85245,-788.1318)"><flowRegion
          id="flowRegion847"><rect
            id="rect849"
            width="2044.5487"
@@ -141,12 +155,17 @@
            x="4961.8691"
            y="3807.1282" /></flowRegion><flowPara
          id="flowPara851"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:condensed;font-size:266.66665649px;font-family:'Agency FB';-inkscape-font-specification:'Agency FB, Condensed';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start">by Phil and Dan</flowPara></flowRoot>    <rect
-       style="opacity:0.98000004;fill:#ff5d5d;fill-opacity:0.72941176;fill-rule:nonzero;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-       id="rect861"
-       width="669.24286"
-       height="138.98015"
-       x="625.3786"
-       y="-453.49289" />
-  </g>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:condensed;font-size:266.66665649px;font-family:'Agency FB';-inkscape-font-specification:'Agency FB, Condensed';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start">by Dan and Phil</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot845-9"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       transform="matrix(0.26458333,0,0,0.26458333,-1260.9424,-788.1318)"><flowRegion
+         id="flowRegion847-7"><rect
+           id="rect849-2"
+           width="2044.5487"
+           height="226.27417"
+           x="4961.8691"
+           y="3807.1282" /></flowRegion><flowPara
+         id="flowPara851-3"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:condensed;font-size:266.66665649px;font-family:'Agency FB';-inkscape-font-specification:'Agency FB, Condensed';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start">RuralRocketGames.com</flowPara></flowRoot>  </g>
 </svg>

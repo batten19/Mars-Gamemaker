@@ -6,7 +6,9 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\spr_roverNew</sprite>
+    <sprites name="playerSprites">
+      <sprite>sprites\spr_roverNew</sprite>
+    </sprites>
     <sprites name="statusBars">
       <sprite>sprites\spr_barBg</sprite>
       <sprite>sprites\spr_backBar</sprite>
