@@ -24,6 +24,9 @@
     <sprites name="Unimplemented Sprites">
       <sprite>sprites\spr_rover_dust</sprite>
     </sprites>
+    <sprites name="searchLoot">
+      <sprite>sprites\spr_rockLoot</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_marsMap</background>

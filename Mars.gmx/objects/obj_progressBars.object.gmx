@@ -8,35 +8,6 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="0" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///Create variables (Many may need moving)
-foodBar = 50;
-waterBar = 50;
-energyBar = 3;
-energyBarMax = 3;
-sanityBar = 100;
-techBar = 5;
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
     <event eventtype="8" enumb="0">
       <action>
         <libid>1</libid>
@@ -59,7 +30,7 @@ techBar = 5;
 //Create food bar
 
 draw_sprite(spr_backBar,1,(view_wview[0] / 30) * 26.5, (view_hview[0] / 30));
-draw_sprite_ext(spr_foodFore,1,(view_wview[0] / 30) * 26.5, (view_hview[0] / 30), foodBar / 100,  1, 0, c_white, 1)
+draw_sprite_ext(spr_foodFore,1,(view_wview[0] / 30) * 26.5, (view_hview[0] / 30), global.foodBar / global.foodBarMax,  1, 0, c_white, 1)
 
 draw_set_colour(c_black);
 draw_set_font(fnt_bars);
@@ -68,7 +39,7 @@ draw_text((view_wview[0] / 30) * 25.6, (view_hview[0] /30) * 1.05,"Food:");
 //Create Water Bar
 
 draw_sprite(spr_backBar,1,(view_wview[0] / 30) * 26.5, (view_hview[0] / 30) * 1.8);
-draw_sprite_ext(spr_waterFore,1,(view_wview[0] / 30) * 26.5, (view_hview[0] / 30) * 1.8, waterBar / 100,  1, 0, c_white, 1)
+draw_sprite_ext(spr_waterFore,1,(view_wview[0] / 30) * 26.5, (view_hview[0] / 30) * 1.8, global.waterBar / global.waterBarMax,  1, 0, c_white, 1)
 
 draw_set_colour(c_black);
 draw_set_font(fnt_bars);
@@ -77,7 +48,7 @@ draw_text((view_wview[0] / 30) * 25.6, (view_hview[0] /30) * 1.85,"Water:");
 //Create Sanity Bar
 
 draw_sprite(spr_backBar,1,(view_wview[0] / 30) * 26.5, (view_hview[0] / 30) * 2.6);
-draw_sprite_ext(spr_sanityFore,1,(view_wview[0] / 30) * 26.5, (view_hview[0] / 30) * 2.6, sanityBar / 100,  1, 0, c_white, 1)
+draw_sprite_ext(spr_sanityFore,1,(view_wview[0] / 30) * 26.5, (view_hview[0] / 30) * 2.6, global.sanityBar / global.sanityBarMax,  1, 0, c_white, 1)
 
 draw_set_colour(c_black);
 draw_set_font(fnt_bars);
@@ -86,7 +57,7 @@ draw_text((view_wview[0] / 30) * 25.6, (view_hview[0] /30) * 2.65,"Sanity:");
 //Create Tech Bar
 
 draw_sprite(spr_backBar,1,(view_wview[0] / 30) * 26.5, (view_hview[0] / 30) * 3.4);
-draw_sprite_ext(spr_techFore,1,(view_wview[0] / 30) * 26.5, (view_hview[0] / 30) * 3.4, techBar / 100,  1, 0, c_white, 1)
+draw_sprite_ext(spr_techFore,1,(view_wview[0] / 30) * 26.5, (view_hview[0] / 30) * 3.4, global.techBar / global.techBarMax,  1, 0, c_white, 1)
 
 draw_set_colour(c_black);
 draw_set_font(fnt_bars);
@@ -95,7 +66,7 @@ draw_text((view_wview[0] / 30) * 25.6, (view_hview[0] /30) * 3.45,"Tech:");
 //Create Energy Bar
 
 draw_sprite(spr_backBar,1,(view_wview[0] / 30) * 26.5, (view_hview[0] / 30) * 4.2);
-draw_sprite_ext(spr_energyFore,1,(view_wview[0] / 30) * 26.5, (view_hview[0] / 30) * 4.2, energyBar / energyBarMax,  1, 0, c_white, 1)
+draw_sprite_ext(spr_energyFore,1,(view_wview[0] / 30) * 26.5, (view_hview[0] / 30) * 4.2, global.energyBar / global.energyBarMax,  1, 0, c_white, 1)
 
 draw_set_colour(c_black);
 draw_set_font(fnt_bars);

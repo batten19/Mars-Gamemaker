@@ -29,7 +29,7 @@
 
 draw_set_font(fnt_default);
 draw_set_colour(c_white);
-draw_text(50, (view_hview[0] / 30), "Number of searches: " + string(global.numberOfSearches) + "/" + string(global.numberOfAllowedSearches));
+draw_text(50, (view_hview[0] / 30), "Number of searches: " + string(global.energyBar) + "/" + string(global.energyBarMax));
 
 </string>
           </argument>

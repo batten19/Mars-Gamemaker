@@ -77,7 +77,46 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(rm_map)
+            <string>///Go to map
+room_goto(rm_map)
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Initialise Global variables
+
+//Global bar variables
+
+global.foodBar = 20;
+global.waterBar = 20;
+global.energyBar = 3;
+global.sanityBar = 100;
+global.techBar = 5;
+
+//Global bar max and min values
+
+global.barMin = 0;
+global.foodBarMax = 100;
+global.waterBarMax = 100;
+global.energyBarMax = 3;
+global.sanityBarMax = 100;
+global.techBarMax = 100;
 </string>
           </argument>
         </arguments>

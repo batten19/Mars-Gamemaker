@@ -28,8 +28,6 @@
             <string>///Initialise variables and randomise grid values (May need to be moved to globals)
 numberOfColumns = 10;
 numberOfRows = 5;
-global.numberOfAllowedSearches = 3;
-global.numberOfSearches = 0;
 
 ///Randomise seed (Disable for debugging)
 randomize();
@@ -81,12 +79,12 @@ nomWidth = (room_width / numberOfColumns);
 nomHeight = (room_width / numberOfRows);
 
 //Find current grid reference, select from created grid and create new object
-if (search &amp;&amp; (global.numberOfSearches &lt; global.numberOfAllowedSearches))
+if (search &amp;&amp; (global.energyBar &gt; 0))
 {
     roverx = floor((obj_rover.x) / nomWidth);
     rovery = floor((obj_rover.y) / nomHeight);
     global.lootRoll = string(ds_grid_get(lootGrid, roverx, rovery));
-    instance_create(100, 100, obj_lootResult);
+    instance_create(view_wview[0] / 2, view_hview[0] / 2, obj_lootResult);
     // Reset value in current cell
     ds_grid_set(lootGrid, roverx, rovery, 0);
 }
@@ -128,45 +126,6 @@ while(i &lt; numberOfColumns)
     i ++;
 }
 
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///OLD METHOD OF SEARCHING
-
-/*
-
-
-///Search event
-search = obj_rover.searchKey;
-nomWidth = (room_width / numberOfColumns);
-nomHeight = (room_width / numberOfRows);
-
-if (search &amp;&amp; (numberOfSearches &lt; numberOfAllowedSearches))
-{
-    roverx = floor((obj_rover.x) / nomWidth);
-    rovery = floor((obj_rover.y) / nomHeight);
-    draw_text(obj_rover.x, obj_rover.y, "You discovered " + string(ds_grid_get(lootGrid, roverx, rovery)) + " science points");  
-    numberOfSearches ++;
-}
-
-*/
 </string>
           </argument>
         </arguments>

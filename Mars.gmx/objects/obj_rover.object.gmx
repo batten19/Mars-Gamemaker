@@ -167,7 +167,7 @@ roomRestart = keyboard_check(ord('R'));
 if (roomRestart) 
 {
     room_restart();
-    global.numberOfSearches = 0;
+    global.energyBar = 3;
 }
 </string>
           </argument>
