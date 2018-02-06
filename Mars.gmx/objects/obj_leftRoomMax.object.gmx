@@ -25,60 +25,12 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Increment number of searches
-global.energyBar --;
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
             <string>///Set variables   
 
 x = view_wview[0] / 2;
 y = view_hview[0] / 2;
 
-//Pause movement
-
-oldSpeed = obj_rover.speed;
-obj_rover.speed = 0;
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///Add value to one of the bars
-
-global.techBar += real(global.lootRoll);
+instance_destroy(obj_rover);
 </string>
           </argument>
         </arguments>
@@ -103,40 +55,8 @@ global.techBar += real(global.lootRoll);
             <kind>1</kind>
             <string>///Draw Box
 
-draw_roundrect_colour_ext(view_wview / 14, view_hview[0] / 14, (view_wview / 14) * 13, (view_hview[0] / 14) * 13, 50, 50, c_white, c_white, false)
+draw_roundrect_colour_ext(view_wview[0] / 14, view_hview[0] / 14, (view_wview[0] / 14) * 13, (view_hview[0] / 14) * 13, 50, 50, c_white, c_white, false)
 </string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>501</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_draw_sprite</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>-1</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>5</kind>
-            <sprite>spr_rockLoot</sprite>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>0</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>0</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>-1</string>
           </argument>
         </arguments>
       </action>
@@ -160,9 +80,13 @@ draw_roundrect_colour_ext(view_wview / 14, view_hview[0] / 14, (view_wview / 14)
 draw_set_font(fnt_loot);
 draw_set_color(c_black);
 
+draw_set_halign( fa_center );
+draw_set_valign( fa_middle );
+
 //Requires relative values (Needs CHANGING)
-draw_text(x - 600, y - 400, "You found " + string(global.lootRoll) + " Tech");
-draw_text(x - 600, y + 300, "Press space to close");
+draw_text(x, y / 3.5, "You were warned");
+draw_text(x, y * (9 / 7), "This time it is terminal");
+draw_text(x, y * (12 / 7), "Press space to destroy your rover");
 </string>
           </argument>
         </arguments>
@@ -185,24 +109,12 @@ draw_text(x - 600, y + 300, "Press space to close");
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>obj_rover.speed = oldSpeed;
+            <string>///Restart the game
+
+game_restart();
 </string>
           </argument>
         </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>203</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_kill_object</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
       </action>
     </event>
   </events>

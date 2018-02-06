@@ -27,13 +27,18 @@
             <kind>1</kind>
             <string>///Draw co-ordinates of buggy
 
-xpos = floor(obj_rover.x);
-ypos = floor(obj_rover.y);
-
-draw_set_font(fnt_default);
-draw_set_colour(c_white);
-draw_text(50, (view_hview[0] / 30) * 28, "X: " + string(xpos));
-draw_text(200, (view_hview[0] / 30) * 28, "Y: " + string(ypos));
+//Check if buggy exists
+if instance_exists(obj_rover)
+{
+    xpos = floor(obj_rover.x);
+    ypos = floor(obj_rover.y);
+    draw_set_halign( fa_center );
+    draw_set_valign( fa_middle );
+    draw_set_font(fnt_default);
+    draw_set_colour(c_white);
+    draw_text(100, (view_hview[0] / 30) * 28, "X: " + string(xpos));
+    draw_text(250, (view_hview[0] / 30) * 28, "Y: " + string(ypos));
+}
 </string>
           </argument>
         </arguments>

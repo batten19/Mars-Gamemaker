@@ -101,13 +101,17 @@ room_goto(rm_map)
             <kind>1</kind>
             <string>///Initialise Global variables
 
+//Global times rover left room
+
+global.timesLeftRoom = 0;
+
 //Global bar variables
 
-global.foodBar = 20;
-global.waterBar = 20;
+global.foodBar = 50
+global.waterBar = 50;
 global.energyBar = 3;
-global.sanityBar = 100;
-global.techBar = 5;
+global.sanityBar = 50;
+global.techBar = 0;
 
 //Global bar max and min values
 
@@ -117,6 +121,13 @@ global.waterBarMax = 100;
 global.energyBarMax = 3;
 global.sanityBarMax = 100;
 global.techBarMax = 100;
+
+//Global chance of events
+global.chanceNothing = 10;
+global.chanceFood = 20;
+global.chanceWater = 20;
+global.chanceTech = 20;
+global.chanceSanity = 20;
 </string>
           </argument>
         </arguments>

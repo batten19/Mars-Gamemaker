@@ -41,12 +41,22 @@
   <objects name="objects">
     <object>objects\obj_rover</object>
     <object>objects\obj_coordinates</object>
-    <object>objects\obj_numberOfSearches</object>
     <object>objects\obj_lootGrid</object>
-    <object>objects\obj_lootResult</object>
+    <object>objects\obj_leftRoom</object>
+    <object>objects\obj_leftRoomMax</object>
     <object>objects\obj_progressBars</object>
     <objects name="menuBars">
       <object>objects\obj_startButton</object>
+    </objects>
+    <objects name="obsoleteObjects">
+      <object>objects\obj_numberOfSearches</object>
+    </objects>
+    <objects name="lootRewards">
+      <object>objects\obj_lootResultNone</object>
+      <object>objects\obj_lootResultFood</object>
+      <object>objects\obj_lootResultWater</object>
+      <object>objects\obj_lootResultTech</object>
+      <object>objects\obj_lootResultSanity</object>
     </objects>
   </objects>
   <rooms name="rooms">

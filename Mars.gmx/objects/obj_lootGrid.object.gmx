@@ -40,8 +40,9 @@ while(i &lt; numberOfColumns)
 {
     while(j &lt; numberOfRows)
         {
-        ds_grid_add(lootGrid, i, j, irandom(10));
-        j++;
+            //Create grid and randomise with the total from all the chances combined
+            ds_grid_add(lootGrid, i, j, irandom(global.chanceNothing + global.chanceFood + global.chanceWater + global.chanceTech + global.chanceSanity));
+            j++;
         }
     i++;
     j=0;
@@ -78,15 +79,52 @@ search = keyboard_check_released(ord('E'));
 nomWidth = (room_width / numberOfColumns);
 nomHeight = (room_width / numberOfRows);
 
-//Find current grid reference, select from created grid and create new object
-if (search &amp;&amp; (global.energyBar &gt; 0))
+//Confirm if rover exists
+if instance_exists(obj_rover)
 {
-    roverx = floor((obj_rover.x) / nomWidth);
-    rovery = floor((obj_rover.y) / nomHeight);
-    global.lootRoll = string(ds_grid_get(lootGrid, roverx, rovery));
-    instance_create(view_wview[0] / 2, view_hview[0] / 2, obj_lootResult);
-    // Reset value in current cell
-    ds_grid_set(lootGrid, roverx, rovery, 0);
+
+//Find current grid reference, select from created grid and create new object
+
+    //Check if search key pressed and if energy left
+    if (search &amp;&amp; (global.energyBar &gt; 0))
+        {
+        //Obtain rover co-ordinates relative to number of columns and rows to get the grid reference
+        roverx = floor((obj_rover.x) / nomWidth);
+        rovery = floor((obj_rover.y) / nomHeight);
+        //Get grid value and store
+        rollValue = (real(ds_grid_get(lootGrid, roverx, rovery)))
+            //If nothing roll
+            if ( rollValue &lt;= global.chanceNothing)
+            {
+                instance_create(view_wview[0] / 2, view_hview[0] / 2, obj_lootResultNone);
+                ds_grid_set(lootGrid, roverx, rovery, 0);
+            }
+            //If food roll
+            else if ( rollValue &lt;= (global.chanceNothing + global.chanceFood))
+            {
+                instance_create(view_wview[0] / 2, view_hview[0] / 2, obj_lootResultFood);
+                ds_grid_set(lootGrid, roverx, rovery, 0);
+            }
+            //If Water roll
+            else if ( rollValue &lt;= (global.chanceNothing + global.chanceFood + global.chanceWater))
+            {
+                instance_create(view_wview[0] / 2, view_hview[0] / 2, obj_lootResultWater);
+                ds_grid_set(lootGrid, roverx, rovery, 0);
+            }
+            //If Tech roll
+            else if ( rollValue &lt;= (global.chanceNothing + global.chanceFood + global.chanceWater + global.chanceTech))
+            {
+                instance_create(view_wview[0] / 2, view_hview[0] / 2, obj_lootResultTech);
+                ds_grid_set(lootGrid, roverx, rovery, 0);
+            }
+            //If Sanity roll
+            else if ( rollValue &lt;= (global.chanceNothing + global.chanceFood + global.chanceWater + global.chanceTech + global.chanceSanity))
+            {
+                instance_create(view_wview[0] / 2, view_hview[0] / 2, obj_lootResultSanity);
+                ds_grid_set(lootGrid, roverx, rovery, 0);
+            }
+
+        }
 }
 
 </string>
